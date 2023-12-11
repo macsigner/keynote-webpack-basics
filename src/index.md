@@ -5,4 +5,4 @@ title: start
 
 ### Präsentationen
 
-- [Web Professionals 2022 Abschlusspräsi](./intro/)
+- [Webpack](./intro/)

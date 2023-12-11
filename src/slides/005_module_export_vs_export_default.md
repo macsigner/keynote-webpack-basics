@@ -6,6 +6,7 @@ subtitle: because we can
 ### Pöbel
 
 ```js
+const stuff = require('stuff');
 module.exports = {
     ...
 };
@@ -14,7 +15,8 @@ module.exports = {
 ### wir
 
 ```js
-export default = {
+import stuff from 'stuff';
+export default {
     ...
 };
 ```
@@ -25,6 +27,6 @@ export default = {
 {
     "name": "Awesome stuff",
     "version": "0.0.1",
-    "type": "module",
+    "type": "module"
 }
 ```

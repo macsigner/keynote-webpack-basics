@@ -8,6 +8,7 @@ export default class SlideNavigation {
             'h5',
             'h6',
             'li',
+            'main > pre',
             '.main-navigation',
         ];
 

@@ -37,6 +37,14 @@
     {% block footer %}
     {% endblock footer %}
 </footer>
+<aside class="options-menu">
+    <div class="options-menu__inner">
+        <form>
+            <input type="checkbox" id="showAll" name="showAll">
+            <label for="showAll">Slide initial anzeigen</label>
+        </form>
+    </div>
+</aside>
 <script type="module" src="{{ '/assets/js/scripts.js' | url }}"></script>
 </body>
 </html>

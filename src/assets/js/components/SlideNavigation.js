@@ -8,6 +8,7 @@ export default class SlideNavigation {
             'h5',
             'h6',
             'li',
+            'main > p',
             'main > pre',
             '.main-navigation',
         ];
@@ -24,11 +25,51 @@ export default class SlideNavigation {
 
         window.addEventListener('keydown', (e) => this._keyListener(e));
 
-        this.next();
+        if (this.hasItemsToShow()) {
+            this.next();
+        }
+
+        let localStorageOptions = localStorage.getItem('options');
+
+        if (localStorageOptions) {
+            let json = JSON.parse(localStorageOptions);
+
+            if (json.showAll) {
+                this.showAll();
+            }
+        }
+
+        document.querySelectorAll('.options-menu form').forEach(el => {
+            if (localStorageOptions) {
+                let json = JSON.parse(localStorageOptions);
+                for (let key of Object.keys(json)) {
+                    const input = el.querySelector(`[name="${key}"]`);
+
+                    switch (input.type) {
+                        case 'checkbox':
+                            input.checked = json[key] === 'on' ? true : false;
+                            break;
+                        default:
+                            input.value = json[key];
+                    }
+                }
+            }
+
+            el.addEventListener('change', (e) => {
+                const formData = new FormData(el);
+                const obj = {};
+
+                for (let data of formData.entries()) {
+                    obj[data[0]] = data[1];
+                }
+
+                localStorage.setItem('options', JSON.stringify(obj));
+            });
+        })
     }
 
     next() {
-        if (this.count < this.mainItems.length) {
+        if (this.hasItemsToShow()) {
             this.mainItems[this.count].classList.add('active');
             this.count++;
 
@@ -82,6 +123,10 @@ export default class SlideNavigation {
         this.next();
     }
 
+    hasItemsToShow() {
+        return this.count < this.mainItems.length;
+    }
+
     _keyListener(e) {
         switch (e.code) {
             case 'ArrowRight':
@@ -93,6 +138,8 @@ export default class SlideNavigation {
             case 'Space':
                 this.showAll();
                 break;
+            case 'Escape':
+                this._toggleMenu();
         }
     }
 
@@ -112,5 +159,9 @@ export default class SlideNavigation {
         }
 
         return prev;
+    }
+
+    _toggleMenu() {
+        document.querySelector('.options-menu').classList.toggle('open');
     }
 }

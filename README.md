@@ -1,7 +1,7 @@
 Keynotes
 ========
 
-Preview on [https://macsigner.github.io/dipl22keynote/](https://macsigner.github.io/dipl22keynote/)
+Preview on https://macsigner.github.io/keynote-webpack-basics/
 
 ## `slideLayouts`
 

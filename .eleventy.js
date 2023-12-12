@@ -42,10 +42,6 @@ module.exports = function(eleventyConfig) {
             return 0;
         });
 
-        content.forEach(item => {
-            console.log(item.data.title);
-        });
-
         return content;
     });
 

@@ -3,14 +3,11 @@ export default class SlideNavigation {
         this.animationTags = [
             '.main li',
             'main > :not(ul)',
-            '.main-navigation',
         ];
 
         this._filterMainItems = this._filterMainItems.bind(this);
         this.mainItems = Array.from(document.querySelectorAll('main > *'))
             .reduce(this._filterMainItems, []);
-
-        this.mainItems.push(document.querySelector('.main-navigation'));
 
         this.mainItems.forEach(el => el.classList.add('fade-in'));
 

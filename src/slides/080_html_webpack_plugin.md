@@ -6,6 +6,7 @@ subtitle: Plug my Semantics
 `npm i -D html-webpack-plugin`
 
 ```javascript
+// webpack.config.js
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
@@ -17,9 +18,9 @@ export default {
 };
 ```
 
-_src/js/main.js_
 
 ```javascript
+// src/js/main.js
 const title = document.createElement('h1');
 title.innerHTML = 'Hail to the King!'
 

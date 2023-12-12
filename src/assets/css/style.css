@@ -45,6 +45,7 @@
 }
 
 html {
+    overflow: auto;
     font-size: 62.5%;
     font-size: calc(50% + .104vw);
     color: var(--color-text);
@@ -190,7 +191,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--color-accent);
 }
 
@@ -226,7 +227,7 @@ body > footer {
 }
 
 body > main {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 body > header {
@@ -557,4 +558,10 @@ pre[class*="language-"] {
 .options-menu__inner {
     padding: 1em;
     background-color: var(--color-accent);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }

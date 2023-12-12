@@ -3,10 +3,11 @@ title: Basic Assets
 subtitle: Halloween
 ---
 
-Damit Webpack mit den Dateien umgehen kann, müssen wir hinterlegen, was Webpack mit dem Zeug anfangen soll. Dazu
+Damit Webpack mit den Dateien umgehen kann, müssen wir hinterlegen was Webpack mit dem Zeug anfangen soll. Dazu
 hinterlegen wir im `webpack.config.js` die nötigen Infos im Bereich `module`.
 
 ```javascript
+// webpack.config.js
 export default {
     mode: 'development',
     entry: './src/js/main.js',
@@ -22,13 +23,4 @@ export default {
         new HtmlWebpackPlugin(),
     ]
 };
-```
-
-```javascript
-import dummyImage from '../assets/img/dummy.png';
-
-const img = document.createElement('img');
-img.src = dummyImage;
-
-document.body.appendChild(img);
 ```

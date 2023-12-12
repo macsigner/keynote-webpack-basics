@@ -4,7 +4,7 @@ subtitle: Back to the :root
 ---
 
 ```javascript
-new CleanWebpackPlugin({
+new HtmlWebpackPlugin({
     filename: 'index.html',
     template: 'src/pages/index.html'
 });

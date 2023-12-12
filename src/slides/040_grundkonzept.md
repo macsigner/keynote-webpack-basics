@@ -13,7 +13,7 @@ export default {
         rules: [
             {
                 test: /\.(wtf)$/,
-                type: 'wtf-loader',
+                use: 'wtf-loader',
             },
         ],
     },

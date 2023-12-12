@@ -6,7 +6,7 @@ subtitle: Copy Pasta
 ### Wo?
 
 - Assetgenerierung für irgendein CMS
-- __Einfache__ Webapps
+- __"Einfache"__ Webapps
 - Statische Seiten
 
 ### Wie?

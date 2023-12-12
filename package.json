@@ -5,22 +5,22 @@
     "main": "index.js",
     "scripts": {
         "start": "npx @11ty/eleventy --serve",
-        "build": "npx @11ty/eleventy --pathprefix 'dipl22keynote'",
+        "build": "npx @11ty/eleventy --pathprefix 'keynote-webpack-basics'",
         "predeploy": "rm -rf public && npm run build",
         "deploy": "npm run predeploy && npm run ghPages",
         "ghPages": "gh-pages -d ./public"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/macsigner/keynote.git"
+        "url": "git+https://github.com/macsigner/keynote-webpack-basics.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/macsigner/keynote/issues"
+        "url": "https://github.com/macsigner/keynote-webpack-basics/issues"
     },
-    "homepage": "https://github.com/macsigner/keynote#readme",
+    "homepage": "https://github.com/macsigner/keynote-webpack-basics#readme",
     "devDependencies": {
         "@11ty/eleventy": "^1.0.1",
         "@11ty/eleventy-navigation": "^0.3.3",

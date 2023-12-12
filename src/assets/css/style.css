@@ -468,7 +468,7 @@ body > footer > ul li:nth-child(3) {
     margin-left: auto;
 }
 
-.main > * {
+:where(html.is-slide .main > *) {
     opacity: 0;
 }
 

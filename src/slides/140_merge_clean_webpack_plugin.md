@@ -6,9 +6,8 @@ subtitle: I like good confs and i cannot lie
 - `npm i -D webpack-merge clean-webpack-plugin`
 - `webpack.prod.js` anlegen
 
-_webpack.prod.js_
-
 ```javascript
+// webpack.prod.js
 import { merge } from 'webpack-merge';
 import * as config from './webpack.config.js';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
@@ -21,6 +20,7 @@ export default merge(config, {
 ```
 
 _package.json_
+
 ```json lines
 {
   "scripts": {

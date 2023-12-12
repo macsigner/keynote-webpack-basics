@@ -7,7 +7,7 @@ subtitle: Halloween
 - Im `package.json` noch den Schlüssel `type` mit dem Wert `module` hinterlegen damit wir imports in der Webpackconfig
   nutzen können
 
-Das Skript `test` können wir löschen. Die Datei sollte nun in etwa so aussehen.
+Das Skript `test` können wir löschen. Die Datei `package.json` sollte nun in etwa so aussehen.
 
 ```json
 {

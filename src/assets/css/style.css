@@ -355,6 +355,7 @@ body > main > :where(ul, ol) li:before {
     content: '';
     display: table-cell;
     vertical-align: baseline;
+    width: 0;
     padding-right: 1rem;
     color: var(--color-primary);
 }
@@ -465,6 +466,10 @@ body > footer > ul li:nth-child(2) {
 
 body > footer > ul li:nth-child(3) {
     margin-left: auto;
+}
+
+.main > * {
+    opacity: 0;
 }
 
 [type=checkbox] {

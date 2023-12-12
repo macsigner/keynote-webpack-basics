@@ -7,6 +7,7 @@ Gemäss dem Suffix eine gewöhnlich Javaskriptdatei.\
 Beim Schlüssel `entry` den Pfad zur Javaskriptdatei hinterlegen.
 
 ```javascript
+// webpack.config.js
 export default {
     mode: 'development',
     entry: './src/js/main.js',

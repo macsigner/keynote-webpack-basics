@@ -306,9 +306,13 @@ body > footer {
     font-size: 2rem;
 }
 
-body > footer > nav.fade-in {
+.main-navigation.fade-in {
     animation-name: footerIn;
     animation-delay: .8s;
+}
+
+.done .main-navigation {
+    animation-play-state: running;
 }
 
 @keyframes footerIn {
@@ -468,7 +472,7 @@ body > footer > ul li:nth-child(3) {
     margin-left: auto;
 }
 
-:where(html.is-slide .main > *) {
+:where(html.is-slide .main > :not(ul)) {
     opacity: 0;
 }
 

@@ -2,19 +2,14 @@ export default class SlideNavigation {
     constructor() {
         this.animationTags = [
             '.main li',
-            'main > *',
-            '.main-navigation',
+            'main > :not(ul)',
         ];
 
         this._filterMainItems = this._filterMainItems.bind(this);
         this.mainItems = Array.from(document.querySelectorAll('main > *'))
             .reduce(this._filterMainItems, []);
 
-        this.mainItems.push(document.querySelector('.main-navigation'));
-
         this.mainItems.forEach(el => el.classList.add('fade-in'));
-
-        this.count = 0;
 
         window.addEventListener('keydown', (e) => this._keyListener(e));
 
@@ -63,28 +58,29 @@ export default class SlideNavigation {
 
     next() {
         if (this.hasItemsToShow()) {
-            this.mainItems[this.count].classList.add('active');
-            this.count++;
+            this.getNextItemToShow().classList.add('active');
 
-            if (this.count === this.mainItems.length - 1) {
-                this.next();
-                document.body.classList.add('done');
-            }
+            return;
+        }
 
-        } else {
-            const currentSlide = this.getCurrentSlide();
+        const currentSlide = this.getCurrentSlide();
 
-            if (!currentSlide) {
-                return;
-            }
+        if (!currentSlide) {
+            return;
+        }
 
-            const nextSlide = currentSlide.closest('li').nextElementSibling;
+        const nextSlide = currentSlide.closest('li').nextElementSibling;
 
-            if (!nextSlide) {
-                return;
-            }
+        if (!nextSlide) {
+            return;
+        }
 
+        if (document.body.matches('.done')) {
             nextSlide.querySelector('a').click();
+        }
+
+        if (this.mainItems.filter(el => el.matches('.active')).length === this.mainItems.length) {
+            document.body.classList.add('done');
         }
     }
 
@@ -109,15 +105,17 @@ export default class SlideNavigation {
     }
 
     showAll() {
-        this.mainItems.forEach(el => el.classList.add('active'));
-
-        this.count = this.mainItems.length - 2;
+        this.mainItems.filter(el => el.matches(':not(.active)')).forEach(() => this.next());
 
         this.next();
     }
 
     hasItemsToShow() {
-        return this.count < this.mainItems.length;
+        return this.getNextItemToShow() !== undefined;
+    }
+
+    getNextItemToShow() {
+        return this.mainItems.find(el => el.matches(':not(.active'));
     }
 
     _keyListener(e) {

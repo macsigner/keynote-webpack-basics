@@ -1,6 +1,6 @@
 ---
 title: Warum Webpack?
-subtitle: Matricks
+subtitle: Idk!
 ---
 
 - "Assetmanager"

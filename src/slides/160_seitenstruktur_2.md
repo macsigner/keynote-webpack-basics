@@ -1,6 +1,6 @@
 ---
 title: Seitenstruktur 2
-subtitle: Back to the :root
+subtitle: Slogans Run
 ---
 
 - Datei `src/pages/index.html` anlegen

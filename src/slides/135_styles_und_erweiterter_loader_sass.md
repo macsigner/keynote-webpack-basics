@@ -1,6 +1,6 @@
 ---
 title: Styles und erweiterter loader 2 (SASS)
-subtitle: Cascade Shitstorm
+subtitle: Getting sassy
 ---
 
 ```javascript

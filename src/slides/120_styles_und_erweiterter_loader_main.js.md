@@ -1,6 +1,6 @@
 ---
 title: Styles und erweiterter loader (main.js)
-subtitle: Cascade Shitstorm
+subtitle: Are you supposed to put it inside there?
 ---
 
 ```javascript

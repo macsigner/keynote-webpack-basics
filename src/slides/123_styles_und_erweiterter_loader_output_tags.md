@@ -1,6 +1,6 @@
 ---
 title: Styles und erweiterter loader - Dateinamen 2
-subtitle: Cascade Shitstorm
+subtitle: Call me whatever you want
 ---
 
 ```javascript

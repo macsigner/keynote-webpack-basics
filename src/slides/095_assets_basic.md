@@ -1,6 +1,6 @@
 ---
 title: Basic Assets 2
-subtitle: Halloween
+subtitle: Romance
 ---
 
 ```javascript

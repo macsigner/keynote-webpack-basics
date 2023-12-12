@@ -1,6 +1,6 @@
 ---
 title: Basic Assets
-subtitle: Halloween
+subtitle: He said ass
 ---
 
 Damit Webpack mit den Dateien umgehen kann, müssen wir hinterlegen was Webpack mit dem Zeug anfangen soll. Dazu

@@ -1,6 +1,6 @@
 ---
 title: Das webpack.config.js
-subtitle: Halloween
+subtitle: I enjoy your exports, Baby!
 ---
 
 Gemäss dem Suffix eine gewöhnlich Javaskriptdatei.\

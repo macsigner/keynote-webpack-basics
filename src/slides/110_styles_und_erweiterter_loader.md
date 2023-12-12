@@ -1,6 +1,6 @@
 ---
 title: Styles und erweiterter loader 1 (webpack.config.js)
-subtitle: Cascade Shitstorm
+subtitle: Loaded Sheets
 ---
 
 - Datei `src/sass/main.css` anlegen

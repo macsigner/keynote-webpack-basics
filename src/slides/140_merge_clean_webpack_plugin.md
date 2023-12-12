@@ -1,6 +1,6 @@
 ---
 title: Produktiveinstellung
-subtitle: I like good confs and i cannot lie
+subtitle: I like big confs and i cannot lie
 ---
 
 - `npm i -D webpack-merge clean-webpack-plugin`

@@ -1,6 +1,6 @@
 ---
 title: Styles und erweiterter loader - Dateinamen 1
-subtitle: Cascade Shitstorm
+subtitle: Tagging along
 ---
 
 Bestimmung der Dateinamen mit Tags => `'[hash]-brownies[ext]`

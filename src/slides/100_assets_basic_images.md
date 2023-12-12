@@ -1,6 +1,6 @@
 ---
 title: Basic Assets 3
-subtitle: Halloween
+subtitle: Big Busty Caches
 ---
 
 - Bilder werden nun mit einem _Hash_ versehen

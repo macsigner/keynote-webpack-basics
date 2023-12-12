@@ -1,6 +1,6 @@
 ---
 title: Das package.json
-subtitle: Halloween
+subtitle: Friday the 13th
 ---
 
 - Im `package.json` das Skript `build` mit dem Befehl `webpack` hinterlegen

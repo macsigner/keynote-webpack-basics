@@ -1,6 +1,6 @@
 ---
 title: Seitenstruktur 3
-subtitle: Back to the :root
+subtitle: Iterate all night long
 ---
 
 Im Beispiel an einem Array aber sonst vom Dateisystem auslesen.

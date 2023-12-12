@@ -1,6 +1,6 @@
 ---
 title: Üblicher Einsatz
-subtitle: Plugin my Entry you dirty Loader!
+subtitle: Copy Pasta
 ---
 
 ### Wo?

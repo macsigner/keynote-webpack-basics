@@ -29,7 +29,7 @@
 <main class="main">
 
     
-        <pre class="language-js"><code class="language-js"><span class="token comment">// webpack.config.js</span><br><span class="token keyword">import</span> WTFPlugin <span class="token keyword">from</span> <span class="token string">'wtf'</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/js/main.js'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(wtf)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token string">'wtf-loader'</span><span class="token punctuation">,</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token keyword">new</span> <span class="token class-name">WTFPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+        <pre class="language-js"><code class="language-js"><span class="token comment">// webpack.config.js</span><br><span class="token comment">// example</span><br><span class="token keyword">import</span> WTFPlugin <span class="token keyword">from</span> <span class="token string">'wtf'</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/js/main.js'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(wtf)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token string">'wtf-loader'</span><span class="token punctuation">,</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token keyword">new</span> <span class="token class-name">WTFPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <ul>
 <li><code>entry</code>: <em>Einstiegsdatei in das Projekt</em></li>
 <li><code>loader</code>: <em>Behandlung der Datenstreams / Anpassung der Daten vor oder während dem Bundling</em></li>
@@ -111,7 +111,13 @@ Bundles</em></li>
             <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-2-sass/"   title="Styles und erweiterter loader 2 (SASS)">Styles und erweiterter loader 2 (SASS)</a>
         </li>
         <li>
-            <a href="/keynote-webpack-basics/produktiveinstellung/"   title="Produktiveinstellung">Produktiveinstellung</a>
+            <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-3-sass/"   title="Styles und erweiterter loader 3 (SASS)">Styles und erweiterter loader 3 (SASS)</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-1/"   title="Produktiveinstellung 1">Produktiveinstellung 1</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-2/"   title="Produktiveinstellung 2">Produktiveinstellung 2</a>
         </li>
         <li>
             <a href="/keynote-webpack-basics/seitenstruktur/"   title="Seitenstruktur">Seitenstruktur</a>
@@ -166,8 +172,16 @@ Bundles</em></li>
     
     
     
+    
+    
+    
         
         
+    
+    
+    
+        
+    
     
     
     
@@ -309,8 +323,8 @@ Bundles</em></li>
     
         
     <li>
-        <a href="/outro/"  
-           title="For all the fish">For all the fish</a>
+        <a href="/produktiveinstellung-2/"  
+           title="Produktiveinstellung 2">Produktiveinstellung 2</a>
     </li>
 
     

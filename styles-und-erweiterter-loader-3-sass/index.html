@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keynotes | Produktiveinstellung</title>
+    <title>Keynotes | Styles und erweiterter loader 3 (SASS)</title>
     <meta name="robots" content="noindex,nofollow">
     <link rel="apple-touch-icon" sizes="180x180" href="/keynote-webpack-basics/assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/keynote-webpack-basics/assets/images/favicons/favicon-32x32.png">
@@ -21,21 +21,16 @@
 </head>
 <body class="">
 <header class="main-header">
-    <p>I like big confs and i cannot lie</p>
+    <p>Getting sassy</p>
 
-    <h1>Produktiveinstellung</h1>
+    <h1>Styles und erweiterter loader 3 (SASS)</h1>
 </header>
 
 <main class="main">
 
     
-        <ul>
-<li><code>npm i -D webpack-merge clean-webpack-plugin</code></li>
-<li><code>webpack.prod.js</code> anlegen</li>
-</ul>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// webpack.prod.js</span><br><span class="token keyword">import</span> <span class="token punctuation">{</span> merge <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'webpack-merge'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> config <span class="token keyword">from</span> <span class="token string">'./webpack.config.js'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> <span class="token punctuation">{</span> CleanWebpackPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'clean-webpack-plugin'</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">merge</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token keyword">new</span> <span class="token class-name">CleanWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p><em>package.json</em></p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"npx webpack serve"</span><span class="token punctuation">,</span><br>    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"webpack"</span><span class="token punctuation">,</span><br>    <span class="token property">"build:prod"</span><span class="token operator">:</span> <span class="token string">"webpack --config webpack.prod.js"</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span></code></pre>
+        <p>Die Datei <code>src/sass/main.css</code> umbenennen zu <code>src/sass/main.scss</code>.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// src/js/main.js</span><br><span class="token keyword">import</span> <span class="token string">'../sass/main.scss'</span><span class="token punctuation">;</span> <span class="token comment">// Import sass in your javascript</span></code></pre>
 
     
 
@@ -111,7 +106,13 @@
             <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-2-sass/"   title="Styles und erweiterter loader 2 (SASS)">Styles und erweiterter loader 2 (SASS)</a>
         </li>
         <li aria-current>
-            <a href="/keynote-webpack-basics/produktiveinstellung/"  aria-current   title="Produktiveinstellung">Produktiveinstellung</a>
+            <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-3-sass/"  aria-current   title="Styles und erweiterter loader 3 (SASS)">Styles und erweiterter loader 3 (SASS)</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-1/"   title="Produktiveinstellung 1">Produktiveinstellung 1</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-2/"   title="Produktiveinstellung 2">Produktiveinstellung 2</a>
         </li>
         <li>
             <a href="/keynote-webpack-basics/seitenstruktur/"   title="Seitenstruktur">Seitenstruktur</a>
@@ -211,43 +212,35 @@
     
     
     
-        
-        
-    
-    
-    
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
+    
+    
+    
     
     
     
     
         
-    
+        
     
     
     
@@ -261,8 +254,8 @@
     
         
     <li>
-        <a href="/styles-und-erweiterter-loader-2-sass/"  
-           title="Styles und erweiterter loader 2 (SASS)">Styles und erweiterter loader 2 (SASS)</a>
+        <a href="/hinweise-3/"  
+           title="Hinweise 3">Hinweise 3</a>
     </li>
 
     
@@ -270,8 +263,8 @@
     
         
     <li>
-        <a href="/produktiveinstellung/"  
-           title="Produktiveinstellung">Produktiveinstellung</a>
+        <a href="/styles-und-erweiterter-loader-3-sass/"  
+           title="Styles und erweiterter loader 3 (SASS)">Styles und erweiterter loader 3 (SASS)</a>
     </li>
 
     
@@ -279,8 +272,8 @@
     
         
     <li>
-        <a href="/outro/"  
-           title="For all the fish">For all the fish</a>
+        <a href="/produktiveinstellung-2/"  
+           title="Produktiveinstellung 2">Produktiveinstellung 2</a>
     </li>
 
     

@@ -29,7 +29,7 @@
 <main class="main">
 
     
-        <pre class="language-javascript"><code class="language-javascript"><span class="token comment">// webpack.config.js</span><br><span class="token keyword">import</span> HtmlWebpackPlugin <span class="token keyword">from</span> <span class="token string">'html-webpack-plugin'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> MiniCssExtractPlugin <span class="token keyword">from</span> <span class="token string">'mini-css-extract-plugin'</span><span class="token punctuation">;</span><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'production'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/js/main.js'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                    <span class="token punctuation">{</span><br>                        <span class="token literal-property property">loader</span><span class="token operator">:</span> MiniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span><br>                    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>                    <span class="token punctuation">{</span><br>                        <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span><br>                    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>                <span class="token punctuation">]</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpeg|jpg|gif)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'asset/resource'</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>            <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'css/[name].css'</span><span class="token punctuation">,</span><br>        <span class="token punctuation">}</span><span class="token punctuation">)</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+        <pre class="language-javascript"><code class="language-javascript"><span class="token comment">// webpack.config.js</span><br><span class="token keyword">import</span> HtmlWebpackPlugin <span class="token keyword">from</span> <span class="token string">'html-webpack-plugin'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> MiniCssExtractPlugin <span class="token keyword">from</span> <span class="token string">'mini-css-extract-plugin'</span><span class="token punctuation">;</span><br><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/js/main.js'</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                    <span class="token punctuation">{</span><br>                        <span class="token literal-property property">loader</span><span class="token operator">:</span> MiniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span><br>                    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>                    <span class="token punctuation">{</span><br>                        <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span><br>                    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>                <span class="token punctuation">]</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>            <span class="token punctuation">{</span><br>                <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpeg|jpg|gif)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><br>                <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'asset/resource'</span><br>            <span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>        <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>            <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'css/[name].css'</span><span class="token punctuation">,</span><br>        <span class="token punctuation">}</span><span class="token punctuation">)</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 
     
 
@@ -105,7 +105,13 @@
             <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-2-sass/"   title="Styles und erweiterter loader 2 (SASS)">Styles und erweiterter loader 2 (SASS)</a>
         </li>
         <li>
-            <a href="/keynote-webpack-basics/produktiveinstellung/"   title="Produktiveinstellung">Produktiveinstellung</a>
+            <a href="/keynote-webpack-basics/styles-und-erweiterter-loader-3-sass/"   title="Styles und erweiterter loader 3 (SASS)">Styles und erweiterter loader 3 (SASS)</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-1/"   title="Produktiveinstellung 1">Produktiveinstellung 1</a>
+        </li>
+        <li>
+            <a href="/keynote-webpack-basics/produktiveinstellung-2/"   title="Produktiveinstellung 2">Produktiveinstellung 2</a>
         </li>
         <li>
             <a href="/keynote-webpack-basics/seitenstruktur/"   title="Seitenstruktur">Seitenstruktur</a>
@@ -187,53 +193,41 @@
     
     
     
-        
-        
-    
-    
-    
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
     
     
     
     
-        
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
     
         
-    
-    
-    
-    
         
-    
-    
-    
-    
-        
-    
     
     
     
@@ -267,8 +261,8 @@
     
         
     <li>
-        <a href="/styles-und-erweiterter-loader-1-webpack-config-js/"  
-           title="Styles und erweiterter loader 1 (webpack.config.js)">Styles und erweiterter loader 1 (webpack.config.js)</a>
+        <a href="/styles-und-erweiterter-loader-dateinamen-2/"  
+           title="Styles und erweiterter loader - Dateinamen 2">Styles und erweiterter loader - Dateinamen 2</a>
     </li>
 
     
@@ -285,8 +279,8 @@
     
         
     <li>
-        <a href="/outro/"  
-           title="For all the fish">For all the fish</a>
+        <a href="/produktiveinstellung-2/"  
+           title="Produktiveinstellung 2">Produktiveinstellung 2</a>
     </li>
 
     

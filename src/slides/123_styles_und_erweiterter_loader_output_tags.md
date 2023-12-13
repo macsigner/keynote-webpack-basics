@@ -5,6 +5,7 @@ subtitle: Call me whatever you want
 
 ```javascript
 // webpack.config.js
+// example
 export default {
     // ...
     output: {

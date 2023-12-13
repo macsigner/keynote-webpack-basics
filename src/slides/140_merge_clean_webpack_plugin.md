@@ -1,5 +1,5 @@
 ---
-title: Produktiveinstellung
+title: Produktiveinstellung 1
 subtitle: I like big confs and i cannot lie
 ---
 
@@ -12,21 +12,10 @@ import { merge } from 'webpack-merge';
 import * as config from './webpack.config.js';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
-export default merge(config, {
+export default merge(config.default, {
+    mode: 'production',
     plugins: [
         new CleanWebpackPlugin(),
     ]
 });
-```
-
-_package.json_
-
-```json lines
-{
-  "scripts": {
-    "start": "npx webpack serve",
-    "build": "webpack",
-    "build:prod": "webpack --config webpack.prod.js"
-  },
-}
 ```

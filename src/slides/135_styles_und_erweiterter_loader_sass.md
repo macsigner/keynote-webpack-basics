@@ -10,6 +10,7 @@ export default {
     // ...
     module: {
         rules: [
+            // Replaces previous CSS loader
             {
                 test: /\.(s)?css/, // SCSS
                 use: [
@@ -34,9 +35,4 @@ export default {
         })
     ]
 };
-```
-
-```javascript
-// src/js/main.js
-import '../sass/main.scss'; // Import sass in your javascript
 ```

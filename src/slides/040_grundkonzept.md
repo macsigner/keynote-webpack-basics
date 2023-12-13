@@ -5,6 +5,7 @@ subtitle: Plugin my Entry you dirty Loader!
 
 ```js
 // webpack.config.js
+// example
 import WTFPlugin from 'wtf';
 
 export default {
